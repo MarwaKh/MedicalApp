@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					CE0294F01E50FDCB00D7F7E8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = P8WWQCMBY7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P8WWQCMBY7;
 				INFOPLIST_FILE = MedicalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marwa.MedicalApp;
@@ -272,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P8WWQCMBY7;
 				INFOPLIST_FILE = MedicalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marwa.MedicalApp;

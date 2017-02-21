@@ -12,9 +12,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     @IBOutlet weak var picker: UIPickerView!
    
+    @IBOutlet weak var zipCodeLabel: UILabel!
     
+    @IBOutlet weak var zipCode: UITextField!
     
     @IBOutlet weak var pickerButton: UIButton!
+    @IBOutlet weak var buyNowbutton: UIButton!
+    
+    @IBOutlet weak var background: UIView!
     
     let States = [ "Alberta","British Columbia","Manitoba","New Brunswick","Newfoundland and Labrador","Northwest Territories","Nova Scotia","Nunavut","Ontario","Prince Edward Island","Quebec","Saskatchewan","Yukon"]
     
@@ -45,10 +50,20 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         pickerButton.setTitle (States[row], for: UIControlState.normal)
         picker.isHidden = true
+        zipCodeLabel.isHidden = false
+        zipCode.isHidden = false
+        buyNowbutton.isHidden = false
     }
     
     @IBAction func pickerButtonTapped(_ sender: Any) {
          picker.isHidden = false
+         zipCodeLabel.isHidden = true
+         zipCode.isHidden = true
+         buyNowbutton.isHidden = true
+    }
+    @IBAction func buyNowButtonTapped(_ sender: Any) {
+        background.isHidden = false
+       
     }
 
 }
